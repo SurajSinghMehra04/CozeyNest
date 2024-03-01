@@ -71,7 +71,7 @@ export default function CreateListing() {
         (snapshot) => {
           const progress =
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          console.log(`Upload is Rs.{progress}% done`);
+          console.log(`Upload is ${progress}% done`);
         },
         (error) => {
           reject(error);
@@ -147,7 +147,7 @@ export default function CreateListing() {
       if (data.success === false) {
         setError(data.message);
       }
-      navigate(`/listing/Rs.{data._id}`);
+      navigate(`/listing/${data._id}`);
     } catch (error) {
       setError(error.message);
       setLoading(false);

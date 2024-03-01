@@ -55,10 +55,10 @@ export default function Home() {
           place with ease
         </h1>
         <div className='text-gray-400 text-xs sm:text-sm'>
-        CozeyNest is the best place to find your next perfect place to
+          CozeyNest is the best place to find your next perfect place to
           live.
           <br />
-          We have a wide range of accomodations for you to choose from.
+          We have a wide range of accomodation for you to choose from.
         </div>
         <Link
           to={'/search'}
